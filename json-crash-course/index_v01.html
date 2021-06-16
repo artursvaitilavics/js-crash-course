@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul id="people"></ul>
+    <script>
+      var person = {
+        name: "Arturs",
+        age: 34,
+        address: {
+          street: "my own street",
+          city: "Riga",
+        },
+        children: ["Helena", "Albert"],
+      };
+
+      //   console.log(person.address.city);
+      //   console.log(person.children[0]);
+
+      var people = [
+        {
+          name: "Arturs",
+          age: "34",
+        },
+        {
+          name: "Diana",
+          age: 37,
+        },
+        {
+          name: "Helena",
+          age: 1,
+        },
+        {
+          name: "Tom Bombadil",
+          age: "inf",
+        },
+      ];
+
+      //   console.log(people[0].name);
+
+      var peopleList = document.getElementById("people");
+
+      var output = "";
+
+      //   peopleList.appendChild(li);
+
+      for (var i = 0; i < people.length; i++) {
+        output += "<li>" + people[i].name + "</li>";
+      }
+      document.getElementById("people").innerHTML = output;
+      
+    </script>
+  </body>
+</html>
+
+<!-- person = JSON.stringify(person);
+  console.log(person);
+  person = JSON.parse(person);
+  console.log(person); -->

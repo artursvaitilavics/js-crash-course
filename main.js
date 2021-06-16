@@ -2,9 +2,9 @@ var form = document.getElementById("addForm");
 var itemList = document.getElementById("items");
 var filter = document.getElementById("filter");
 
-const itemObject = {
-  
-}
+const items = {
+  items: ["Item 01", "Second item", "From const object"],
+};
 
 // Form submit event
 form.addEventListener("submit", addItem);
